@@ -1,8 +1,5 @@
-const montante = 90000;
-const capital = 60000;
-const meses = 24;
+const raioDaBase = 3;
+const alturaDoCilindro = 1;
+const areaTotal = 2 * Math.PI * raioDaBase* (raioDaBase + alturaDoCilindro);
 
-const taxaDeJuros = ((montante / capital) ** (1/meses)) -1
-//transformando em taxa real
-const taxaDeJurosFinal = taxaDeJuros * 100;
-console.log(`O seu financiamento de ${capital} reais teve uma taxa de juros de ${taxaDeJurosFinal}, pois após ${meses} meses você teve que pagar ${montante} reais`); 
+console.log(areaTotal);
